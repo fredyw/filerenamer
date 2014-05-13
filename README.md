@@ -16,7 +16,7 @@ The JAR will be created in build/libs directory.
 
 Download
 --------
-https://raw.github.com/fredyw/filerenamer/master/filerenamer.jar
+https://github.com/fredyw/filerenamer/releases
 
 Screenshot
 ----------
