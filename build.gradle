@@ -16,7 +16,7 @@ dependencies {
     compile "com.miglayout:miglayout:3.7.4"
     compile "com.jgoodies:looks:2.2.2"
     
-    testCompile "junit:junit:4.10"
+    testCompile "junit:junit:4.11"
 }
 
 jar {

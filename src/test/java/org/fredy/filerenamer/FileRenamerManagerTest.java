@@ -31,17 +31,16 @@ import org.fredy.filerenamer.replacer.Replacer;
 import org.fredy.filerenamer.replacer.ReplacerFactory;
 import org.fredy.filerenamer.replacer.ReplacerType;
 import org.fredy.filerenamer.util.FileUtils;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 /*
  * @author fredy
  */
 public class FileRenamerManagerTest {
-
-    @BeforeClass
-    public static void setUp() throws Exception {
+    @Before
+    public void setUp() throws Exception {
         new File("./testdata/dir1").mkdirs();
         new File("./testdata/dir2").mkdirs();
         new File("./testdata/1 Hello World.txt").createNewFile();
@@ -52,8 +51,8 @@ public class FileRenamerManagerTest {
         new File("./testdata/dir2/6 Hello World.txt").createNewFile();
     }
 
-    @AfterClass
-    public static void cleanUp() {
+    @After
+    public void cleanUp() {
         FileUtils.deleteDirectory(new File("./testdata"));
     }
 
